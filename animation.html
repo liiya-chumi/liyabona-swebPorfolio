@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<title>LIYABONA'S PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+/* --- BACKGROUND IMAGE SECTION --- */
+.bg-section {
+  /* Fixed: changed \ to / */
+  background-image: url("images\backgroungshot.webp");
+  background-color: #141414;      /* fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* parallax */
+  position: relative;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding: 80px 20px;
+  min-height: 400px;
+}
+
+/* Dark overlay so text stays readable */
+.bg-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.bg-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- SOCIAL BUTTONS --- */
+.social-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.yt      { background-color: #c4302b; }
+.webtoon { background-color: #00dc64; color: black !important; }
+.insta   { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+</style>
+
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/liya.jpeg" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i><p>HOME</p>
+  </a>
+  <a href="programs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i><p>PROGRAMS</p>
+  </a>
+
+    <a href="animations.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-film w3-xxlarge"></i><p>ANIMATIONS</p>
+  </a>
+  <a href="sewing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-scissors w3-xxlarge"></i><p>SEWING</p>
+  </a>
+
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i><p>CONTACT</p>
+  </a>
+</nav>
+<!-- Mobile Navbar -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <!-- Changed hrefs to separate pages -->
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="programs.html" class="w3-bar-item w3-button" style="width:25% !important">PROGRAMS</a>
+    <a href="animation.html" class="w3-bar-item w3-button" style="width:25% !important">ANIMATION</a>
+    <a href="sewing.html" class="w3-bar-item w3-button" style="width:25% !important">SEWING</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <div class="w3-padding-64 w3-content" id="animations">
+    
+    <h2 class="w3-text-light-grey">Animations & Characters</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-grey">Bringing ideas to life, one frame at a time.</p>
+
+    
+    <!-- SECTION 1: CHARACTER SLIDESHOW             -->
+    
+    <h3 class="w3-text-light-grey w3-padding-16">Characters I've Created</h3>
+    
+    <div class="w3-content w3-display-container w3-margin-bottom" style="max-width:800px">
+      <!-- CHARACTER 1 -->
+      <div class="mySlides">
+        <img src="images/oldman-rigger.png" style="width:100%; border-radius:8px;">
+        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black w3-opacity">Character rigger</div>
+      </div>
+
+      <!-- CHARACTER 2 -->
+      <div class="mySlides">
+        <img src="images/Screenshot 2026-11-17 110341.png" style="width:100%; border-radius:8px;">
+        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black w3-opacity">Character rigger</div>
+      </div>
+
+      <!-- CHARACTER 3 -->
+      <div class="mySlides">
+        <img src="images/bobrigger.png" style="width:100%; border-radius:8px;">
+        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black w3-opacity">Character rigger</div>
+      </div>
+
+      <!-- CONTROLS -->
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
+  
+    <!-- SECTION 2: BIG SHOWREEL                    -->
+    
+    <h3 class="w3-text-light-grey w3-padding-16 w3-margin-top">Animation Showreel</h3>
+    
+    <div class="card">
+      <!-- Fixed: changed \ to / -->
+      <video controls style="width: 100%; border-radius: 8px;">
+        <source src="videos\showreel.mp4" type="video/mp4"controls poster="webpages\images\stepup.png" >
+      </video>
+      <h3 class="card-title w3-text-light-grey">My Best Work (2023-2026)</h3>
+      <p class="card-desc w3-text-grey">A compilation of my favorite animations, motion graphics, and visual effects.</p>
+    </div>
+
+
+  
+    <!-- SECTION 3: LINKS WITH BACKGROUND IMAGE     -->
+    <!-- Fixed: Removed the random = sign -->
+    <div class="bg-section">
+      <div class="bg-content w3-center">
+        <h2 class="w3-text-white w3-xxlarge">Want to see more?</h2>
+        <p class="w3-text-light-grey w3-large w3-margin-bottom">I post full animations, webcomics, and behind-the-scenes content on my other platforms.</p>
+        
+        <!-- CHANGE THE HREFS TO YOUR ACTUAL LINKS -->
+        <a href="https://youtube.com/@liya's animations " target="_blank" class="social-link yt">
+          <i class="fa fa-youtube-play"></i> YouTube
+        </a>
+        
+        <a href="https://webtoon.com/liyabona" target="_blank" class="social-link webtoon">
+          <i class="fa fa-book"></i> Webtoon
+        </a>
+        
+        <a href="https://instagram.com/lilie.mna" target="_blank" class="social-link insta">
+          <i class="fa fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+</div>
+
+<!-- JAVASCRIPT FOR SLIDESHOW -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

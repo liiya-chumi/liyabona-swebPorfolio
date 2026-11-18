@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>LIYABONA'S PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.card-video {
+  width: 100%;                /* Take up full width of the card... */
+  max-width: 700px;           /* ...but never get bigger than 700px! */
+  display: block;             
+  margin: 0 auto 16px auto;   /* Centers the video and adds space below it */
+  border-radius: 4px;         /* Rounds the video corners slightly */
+}
+.card-title {
+  color: #fff;
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  
+  /* This flexbox setup puts the Title and GitHub button on the same line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;                  /* Space between title and button */
+}
+
+.card-desc {
+  color: #aaa;
+  margin: 0 auto 16px auto;
+  max-width: 600px;           /* Stops description text from stretching too wide */
+}
+.card-tags {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;    /* Centers the tags */
+  flex-wrap: wrap;            /* Drops tags to a new line if they run out of space */
+  gap: 6px;                   /* Space between tags */
+}
+
+.tag {
+  background: #444;
+  color: #ddd;
+  padding: 2px 10px;
+  border-radius: 12px;        /* Makes them look like pills */
+  font-size: 12px;
+}
+
+.github-btn {
+  background: #333;
+  color: #fff !important;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: normal;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.github-btn:hover {
+  background: #555;
+}
+
+
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/liya.jpeg" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i><p>HOME</p>
+  </a>
+  <a href="programs.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i><p>PROGRAMS</p>
+  </a>
+
+    <a href="animation.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-film w3-xxlarge"></i><p>ANIMATIONS</p>
+  </a>
+  <a href="sewing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-scissors w3-xxlarge"></i><p>SEWING</p>
+  </a>
+
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i><p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <!-- Changed hrefs to separate pages -->
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="programs.html" class="w3-bar-item w3-button" style="width:25% !important">PROGRAMS</a>
+    <a href="animation.html" class="w3-bar-item w3-button" style="width:25% !important">ANIMATION</a>
+    <a href="sewing.html" class="w3-bar-item w3-button" style="width:25% !important">SEWING</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home - This is the Home page content -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+   
+    <p>I sew stories, animate ideas, and code experiences </p>
+    
+  </header>
+
+  <!-- The rest of the original single-page sections (About, Photos, Contact) have been removed because 
+       they now live on their own separate pages (about.html, photos.html, contact.html). 
+       This index page only shows the home/hero section. -->
+
+<br>
+     <div class="card">
+
+  <video class="card-video" src="videos/kitchen.avi" controls poster="images/babrah kitchen.png"></video>
+
+  <h3 class="card-title">
+    babrah's kitchen website
+    <a href="https://github.com/liiya-chumi/babrahskichen" target="_blank" class="github-btn">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+  </h3>
+
+  <p class="card-desc"> this is a kota website i created for my first client , main purpose is connect with a wider audience , 
+     , while the order online function allows her to prepare kotas oreders sooner saving her groceries and other extra costs.</p>
+
+  </p>
+  <div class="card-tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+  </div>
+
+<br>
+  
+     <div class="card">
+
+  <video class="card-video" src="videos/sammy.avi" controls poster="images/simply sam .png"></video>
+
+  <h3 class="card-title">
+    babrah's kitchen website
+    <a href="https://github.com/liiya-chumi/sammysmobilehair" target="_blank" class="github-btn">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+  </h3>
+
+
+
+
+  <p class="card-desc">  this website was created for my second client ,purpose was to get booking from clients was didnt not want to walking to 
+    alll the walk to the saloon , *if you cant go to the saloon the the saloon come to you. 
+  <div class="card-tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+  </div>
+</div>  
+
+
+
+
+
+ <div class="card">
+
+  <video class="card-video" src="videos\main.mp4" controls poster="images\main.png"></video>
+
+  <h3 class="card-title">
+    SparkleBoutique
+    <a href="https://github.com/liiya-chumi/SparkleBoutique" target="_blank" class="github-btn">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+  </h3>
+
+
+
+
+  <p class="card-desc">  simple saloon console game
+  <div class="card-tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+  </div>
+</div>  
+
+
+  <!-- Footer remains+, but links are still functional -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+   
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
